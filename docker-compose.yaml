@@ -1,15 +1,15 @@
 version: "3.8"
 services:
-  containos:
+  daemon_containos:
     build:
       context: .
-    container_name: containos
-    image: snrmukesh/containos:1.0.0
-    ports:
-    - 5000:5000
+    container_name: daemon_containos
+    image: snrmukesh/daemon_containos:1.0.0
+    # ports:
+    # - 5000:5000
     volumes:
-    - ./src/web_containos:/work/web_containos
-    # working_dir: /work/web_containos
+    - ./src/daemon_containos:/work/daemon_containos
+    # working_dir: /work/daemon_containos
     # entrypoint: /bin/bash
     # stdin_open: true
     # tty: true

@@ -1,3 +1,5 @@
 src/web_containos/obj/
 src/web_containos/bin/
 *.suo
+src/daemon_containos/bin/
+src/daemon_containos/obj/
