@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: daemoncontainos-deploy
+  name: webcontainos-deploy
   labels:
-    app: daemoncontainos-app
+    app: webcontainos-app
   annotations:
 spec:
   selector:
     matchLabels:
-      app: daemoncontainos-app
+      app: webcontainos-app
   replicas: 2
   strategy:
     type: RollingUpdate
@@ -18,14 +18,14 @@ spec:
   template:
     metadata:
       labels:
-        app: daemoncontainos-app
+        app: webcontainos-app
     spec:
       containers:
-      - name: daemoncontainos-app
-        image: snrmukesh/daemon_containos:1.0.0
+      - name: webcontainos-app
+        image: snrmukesh/containos:1.0.0
         imagePullPolicy: Always
         ports:
-        # - containerPort: 5000
+        - containerPort: 5000
         resources:
           requests:
             memory: "64Mi"
