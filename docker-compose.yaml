@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  containos:
+    build:
+      context: .
+    container_name: containos
+    image: snrmukesh/containos:1.0.0
+    ports:
+    - 5000:5000
+    volumes:
+    - ./src/web_containos:/work/web_containos
+    # working_dir: /work/web_containos
+    # entrypoint: /bin/bash
+    # stdin_open: true
+    # tty: true
