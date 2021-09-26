@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: webcontainos-service
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: webcontainos-app
   ports:
     - protocol: TCP
-      port: 80
+      port: 5000
       targetPort: 5000

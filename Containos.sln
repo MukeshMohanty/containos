@@ -6,7 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D24A4B6D-75E6-4B79-8188-1D54624E742A}"
 	ProjectSection(SolutionItems) = preProject
 		.dockerignore = .dockerignore
-		src\daemon_containos\daemon_containos.csproj = src\daemon_containos\daemon_containos.csproj
 		docker-compose-web.yaml = docker-compose-web.yaml
 		docker-compose.yaml = docker-compose.yaml
 		dockerfile = dockerfile
@@ -17,10 +16,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web_containos", "src\web_co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kubernetes", "kubernetes", "{E8ADAB76-16D3-4CA0-849D-568A419F83A1}"
 	ProjectSection(SolutionItems) = preProject
-		kubernetes\deployment-web.yaml = kubernetes\deployment-web.yaml
-		kubernetes\deployment.yaml = kubernetes\deployment.yaml
-		kubernetes\service-web.yaml = kubernetes\service-web.yaml
-		kubernetes\service.yaml = kubernetes\service.yaml
+		kubernetes\daemon-deployment.yaml = kubernetes\daemon-deployment.yaml
+		kubernetes\database-persistent-volume-claim.yaml = kubernetes\database-persistent-volume-claim.yaml
+		kubernetes\postgres-deployment.yaml = kubernetes\postgres-deployment.yaml
+		kubernetes\postgres-service.yaml = kubernetes\postgres-service.yaml
+		kubernetes\redis-deployment.yaml = kubernetes\redis-deployment.yaml
+		kubernetes\redis-service.yaml = kubernetes\redis-service.yaml
+		kubernetes\web-deployment.yaml = kubernetes\web-deployment.yaml
+		kubernetes\web-service.yaml = kubernetes\web-service.yaml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "daemon_containos", "src\daemon_containos\daemon_containos.csproj", "{314A1BFB-F998-4049-8F9F-9EE0A127061D}"
